@@ -14,12 +14,12 @@ I build this sublime extension because I believe that the github search engine a
 
 Paste this in sublime console:
 
-~~~
-import urllib2,os; pf='Package Decontrol.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); print 'Please restart Sublime Text to finish installation'
-~~~
+<pre style="word-wrap: break-word;"><code>import urllib2,os; pf='Package Decontrol.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); print 'Please restart Sublime Text to finish installation'
+</code></pre>
+
 
 ### Todo
 
 - add support for windows: I had to use curl because my python doesnt have ssl.
-- add support to remove installed packages, for now just delete the folder
+- add support to remove installed packages, for now just delete the folder or use package control "remove package" :)
 - add other sources of packages, like gist or bitbucket
