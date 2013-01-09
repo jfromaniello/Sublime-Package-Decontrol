@@ -13,8 +13,9 @@ I build this sublime extension because I believe that the github search engine a
 
 Paste this in sublime console:
 
-<pre style="word-wrap: break-word;"><code>import urllib2,os; pf='Package Decontrol.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); print 'Please restart Sublime Text to finish installation'
-</code></pre>
+~~~
+import urllib2,os,zipfile; pf='Package Decontrol.sublime-package'; pp=sublime.packages_path(); fp=os.path.join(pp,pf); urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(fp,'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); zipfile.ZipFile(fp).extractall(os.path.join(pp, 'Package Decontrol')); print 'Please restart Sublime Text to finish installation'
+~~~
 
 ### Todo
 
