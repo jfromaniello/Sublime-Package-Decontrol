@@ -8,7 +8,7 @@ I build this sublime extension because I believe that the github search engine a
 
 
 **NOTE:** Package Control can also install from git repositories, you have to pass the full url. The function is call "Add Repository".
-**NOTE2: for now it uses curl!! because bundled python in linux distributions of sublime doesn't have ssl enabled. I will fix this soon.
+**NOTE2: for now it uses curl!! because bundled python in linux distributions of sublime doesn't have ssl enabled. I will fix this soon.**
 
 ### Installation
 
