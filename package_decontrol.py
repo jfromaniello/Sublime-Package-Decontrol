@@ -41,6 +41,8 @@ class PackageDecontrolCommand(sublime_plugin.WindowCommand):
                 elif(exist('wget')):
                     print 'installing with wget'
                     self.download_with_curl(name, tempfile)
+                else:
+                    print 'you need to install curl or wget in order to install packages'
 
     def download_native(self, name, tempfile):
         url = "https://github.com/%s/archive/master.zip" % name
