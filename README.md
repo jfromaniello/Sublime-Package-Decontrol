@@ -20,18 +20,6 @@ I build this sublime extension because I believe that the github search engine a
 - Package Decontrol: Install from github
 - Enter the name of the user/repository, eg: ```jfromaniello/sublime-node-require```
 
-## Package authors convention
-
-If you are a package author, please include this in your readme file
-
-~~~
-## Install with [Package Decontrol](https://github.com/jfromaniello/Sublime-Package-Decontrol)
-
-```
-your-github-handler/your-repository
-```
-~~~
-
 ### Todo
 
 - add "Remove Package", for now just delete the folder or use package control "remove package" :)
