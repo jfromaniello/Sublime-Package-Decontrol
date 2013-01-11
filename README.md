@@ -1,6 +1,6 @@
 Sublime Package to install packages from github repositories.
 
-Like [Package Control](http://wbond.net/sublime_packages/package_control) but without a central registry.
+![](http://content.screencast.com/users/JoseFR/folders/Jing/media/2774b50b-89c1-4980-a51c-e2db27e5d136/2013-01-11_1041.png)
 
 ## Installation
 
