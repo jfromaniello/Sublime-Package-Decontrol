@@ -6,9 +6,8 @@ Like [Package Control](http://wbond.net/sublime_packages/package_control) but wi
 
 Paste this in sublime console:
 
-~~~
-import urllib2,os,zipfile; pf='Package Decontrol.sublime-package'; pp=sublime.packages_path(); fp=os.path.join(pp,pf); urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(fp,'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); zipfile.ZipFile(fp).extractall(os.path.join(pp, 'Package Decontrol'))
-~~~
+> import urllib2,os,zipfile; pf='Package Decontrol.sublime-package'; pp=sublime.packages_path(); fp=os.path.join(pp,pf); urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(fp,'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); zipfile.ZipFile(fp).extractall(os.path.join(pp, 'Package Decontrol'))
+
 
 ## Why?
 
