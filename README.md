@@ -2,7 +2,7 @@ Sublime Package to install packages from github repositories.
 
 Like [Package Control](http://wbond.net/sublime_packages/package_control) but without a central registry.
 
-### Installation
+## Installation
 
 Paste this in sublime console:
 
@@ -20,11 +20,11 @@ I build this sublime extension because I believe that the github search engine a
 - Package Decontrol: Install from github
 - Enter the name of the user/repository, eg: ```jfromaniello/sublime-node-require```
 
-### Todo
+## Todo
 
 - add "Remove Package", for now just delete the folder or use package control "remove package" :)
 - add other sources of packages, like gist or bitbucket
 
-### License 
+## License 
 
 MIT
