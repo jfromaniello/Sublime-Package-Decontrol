@@ -8,6 +8,10 @@ Paste this in sublime console:
 
 > import urllib2,os,zipfile; pf='Package Decontrol.sublime-package'; pp=sublime.packages_path(); fp=os.path.join(pp,pf); urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(fp,'wb').write(urllib2.urlopen('http://bit.ly/package-decontrol').read()); zipfile.ZipFile(fp).extractall(os.path.join(pp, 'Package Decontrol'))
 
+For **Sublime Text 3** with Python 3.3 install as follows:
+
+> import urllib,urllib.request,os,zipfile; pf='Package Decontrol.sublime-package'; pp=sublime.packages_path(); fp=os.path.join(pp,pf); urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); open(fp,'wb').write(urllib.request.urlopen('http://bit.ly/s3-package-decontrol').read()); zipfile.ZipFile(fp).extractall(os.path.join(pp, 'Package Decontrol'))
+
 
 ## Why?
 
