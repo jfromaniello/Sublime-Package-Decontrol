@@ -4,9 +4,9 @@ import subprocess
 import os
 import zipfile
 import sys
-import urllib.request, urllib.error, urllib.parse
+import urllib2
 
-urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()))
+urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler()))
 packages_path = sublime.packages_path()
 
 
@@ -29,24 +29,24 @@ class PackageDecontrolCommand(sublime_plugin.WindowCommand):
                 return False
 
         if('ssl' in sys.modules):
-            print('installing with liburl')
+            print 'installing with liburl'
             self.download_native(name, tempfile)
         else:
             if(os.name == 'nt'):
-                print("can't download in Windows without ssl")
+                print "can't download in Windows without ssl"
             else:
                 if(exist('curl')):
-                    print('installing with curl')
+                    print 'installing with curl'
                     self.download_with_curl(name, tempfile)
                 elif(exist('wget')):
-                    print('installing with wget')
+                    print 'installing with wget'
                     self.download_with_curl(name, tempfile)
                 else:
-                    print('you need to install curl or wget in order to install packages')
+                    print 'you need to install curl or wget in order to install packages'
 
     def download_native(self, name, tempfile):
         url = "https://github.com/%s/archive/master.zip" % name
-        request = urllib.request.urlopen(url)
+        request = urllib2.urlopen(url)
         open(tempfile, 'wb').write(request.read())
 
     def download_with_curl(self, name, tempfile):
