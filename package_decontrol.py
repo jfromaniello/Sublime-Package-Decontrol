@@ -40,7 +40,7 @@ class PackageDecontrolCommand(sublime_plugin.WindowCommand):
                     self.download_with_curl(name, tempfile)
                 elif(exist('wget')):
                     print 'installing with wget'
-                    self.download_with_curl(name, tempfile)
+                    self.download_with_wget(name, tempfile)
                 else:
                     print 'you need to install curl or wget in order to install packages'
 
